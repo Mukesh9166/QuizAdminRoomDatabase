@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/addQuestionFragment">
+
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.ms.quizapp.ui.userList.view.UserListFragment"
+        android:label="fragment_user_list"
+        tools:layout="@layout/fragment_user_list">
+        <action
+            android:id="@+id/action_userListFragment_to_viewQuestionsFragment"
+            app:destination="@id/viewQuestionsFragment" />
+        <action
+            android:id="@+id/action_userListFragment_to_addQuestionFragment"
+            app:destination="@id/addQuestionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewQuestionsFragment"
+        android:name="com.ms.quizapp.ui.viewQuestions.view.ViewQuestionsFragment"
+        android:label="fragment_view_questions">
+        <action
+            android:id="@+id/action_viewQuestionsFragment_to_addQuestionFragment"
+            app:destination="@id/addQuestionFragment" />
+        <action
+            android:id="@+id/action_viewQuestionsFragment_to_userListFragment"
+            app:destination="@id/userListFragment" />
+        <action
+            android:id="@+id/action_viewQuestionsFragment_to_updateQuestionFragment"
+            app:destination="@id/updateQuestionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addQuestionFragment"
+        android:name="com.ms.quizapp.ui.addQuestion.view.AddQuestionFragment"
+        android:label="fragment_add_question">
+        <action
+            android:id="@+id/action_addQuestionFragment_to_viewQuestionsFragment"
+            app:destination="@id/viewQuestionsFragment" />
+        <action
+            android:id="@+id/action_addQuestionFragment_to_userListFragment"
+            app:destination="@id/userListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateQuestionFragment"
+        android:name="com.ms.quizapp.ui.updateQuestion.view.UpdateQuestionFragment"
+        android:label="UpdateQuestionFragment" >
+
+        <argument
+            android:name="question"
+            app:argType="com.ms.quizapp.data.models.Question" />
+
+    </fragment>
+
+
+</navigation>

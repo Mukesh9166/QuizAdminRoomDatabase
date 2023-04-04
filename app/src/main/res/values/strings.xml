@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <string name="quiz_app">Quiz App</string>
+    <string name="app_id">642015593943ae538a48d87f</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_question">Add Question</string>
+    <string name="questions">Questions</string>
+    <string name="users">Users</string>
+    <string name="press_back_again_to_exit">Press Back again to exit</string>
+    <string name="retry">Retry</string>
+    <string name="no_data_found">No data found</string>
+    <string name="something_went_wrong">Something went wrong. !!</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="please_fill_in_all_fields">Please fill in all fields</string>
+    <string name="success">Success</string>
+    <string name="question_added_successfully">Question added successfully</string>
+    <string name="ok">OK</string>
+    <string name="option_one">Option 1</string>
+    <string name="option_two">Option 2</string>
+    <string name="option_three">Option 3</string>
+    <string name="save">Save</string>
+    <string name="pick_image">Pick Image</string>
+    <string name="enter_question">\" Enter Question\"</string>
+    <string name="no_questions_found">No questions found</string>
+    <string name="question_updated_successfully">Question updated successfully!!</string>
+    <string name="update_question">Update Question</string>
+</resources>
